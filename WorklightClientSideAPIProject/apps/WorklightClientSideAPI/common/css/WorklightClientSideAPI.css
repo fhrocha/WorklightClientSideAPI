@@ -1,12 +1,79 @@
+/*
+*  Licensed Materials - Property of IBM
+*  5725-G92 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
+*  US Government Users Restricted Rights - Use, duplication or
+*  disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+*/
+
 /* Reset CSS */
 a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
 	margin: 0;
 	padding: 0;
 }
 
-/* Worklight container div */
-#content {
+h1 {
+	font-size: 18px;
+	font-family: inherit;
+}
+
+#AppBody {
 	height: 460px;
 	margin: 0 auto;
 	width: 320px;
+	background-color: #ccc;
+}
+
+#header {
+	text-align: center;
+	background-color: #1D4D90;
+	color: #F9FAFB;
+	font-size: 16px;
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px solid #BBBBBB;
+}
+
+#ReloadButton {
+	background: transparent url(../images/reload.png) no-repeat center center;
+	width: 30px;
+	height: 38px;
+	float: right;
+}
+
+#ReloadButton:Hover {
+	cursor: pointer;
+}
+
+#wrapper {
+	padding: 10px;
+}
+
+#worklight {
+	height: 39px;
+	width: 320px;
+	text-align: center;
+	color: #1D4D90;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#worklight:Hover {
+	cursor: pointer;
+}
+
+#wrapper select {
+	color: #1D4D90;
+	padding: 2px;
+	width: 70%;
+}
+
+#wrapper #info {
+	margin: 40px auto;
+	padding: 20px;
+	border: 1px solid lightgrey;
+	width: 80%;
+	text-align: center;
+	text-shadow: 2px 2px 5px #1D4D90;
+	font-size: 25px;
+	height: 200px;
 }

@@ -1,17 +1,34 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>WorklightClientSideAPI</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-	<link rel="shortcut icon" href="images/favicon.png">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="stylesheet" href="css/WorklightClientSideAPI.css">
-	<script>window.$ = window.jQuery = WLJQ;</script>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<title>Basic Client Side API</title>
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="stylesheet" href="css/WorklightClientSideAPI.css">
+<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
 </head>
 <body id="content" style="display: none;">
-	<!--application UI goes here-->
-	WorklightClientSideAPI
+	<div id="AppBody">
+		<div id="header">
+			<div id="ReloadButton" onclick="reload();"></div>
+			<h1>Basic Client Side API</h1>
+		</div>
+		<div id="wrapper">
+			<label for="actions">Display: </label> <select id="actions"
+				onchange="displayInfo();">
+				<option value="appEnvironment" selected="selected">Application
+					Environment</option>
+				<option value="language">Language</option>
+			</select>
+			<div id="info"></div>
+		</div>
+		<div id="worklight" onclick="loadWebPage();">IBM Worklight</div>
+	</div>
 	<script src="js/initOptions.js"></script>
 	<script src="js/WorklightClientSideAPI.js"></script>
 	<script src="js/messages.js"></script>
